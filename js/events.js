@@ -10,6 +10,14 @@ function frameIt() {
   })
 }
 
+function pressIt() {
+  $( "form input" ).on( "keydown", function(key) {
+    if ( parseInt(key.which) === 71 ) {
+      alert("You have pressed the G key")
+    }
+  })
+}
+
 $( document ).ready( function() {
   getIt()
   frameIt()
