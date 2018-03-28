@@ -33,5 +33,6 @@ $(document).ready(function(){
 window.getIt();
 window.frameIt();
 window.submitIt();
+window.pressIt();
 
 });
