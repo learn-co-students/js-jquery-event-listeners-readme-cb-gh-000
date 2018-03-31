@@ -4,9 +4,10 @@
    $('p').on('click', () => {alert('hey!')})
  }
 
-
  function frameIt() {
-   $('img').on('load', e => { $('img').addClass('tasty')})
+   $('img').on('load', function() {
+     $('img').addClass('tasty')
+   })
  }
 
 
@@ -30,7 +31,8 @@ function submitIt() {
 
 $(document).ready(function(){
 
-// call functions here
-
-
+  getIt()
+  frameIt()
+  pressIt()
+  submitIt()
 });
